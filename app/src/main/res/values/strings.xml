@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BMI</string>
+    <string name="hight">Input your hight(m)</string>
+    <string name="weight">Input your weight(kg)</string>
+    <string name="send">OK</string>
+    <string name="daan">Your IBM is</string>
+    <string name="RMB">Input RMB</string>
+    <string name="dollar">DOLLAR</string>
+    <string name="euro">EURO</string>
+    <string name="won">WON</string>
+    <string name="hello">HELLO</string>
+    <string name="save">SAVE</string>
+    <string name="config">CONFIG</string>
+</resources>
