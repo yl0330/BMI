@@ -57,16 +57,13 @@ public class ConfigActivity extends AppCompatActivity {
         intent.putExtras(bdl);
         setResult(2,intent);
     //返回到调用页⾯ finish();
-        SharedPreferences sharePreferences = getSharedPreferences("myrate", Activity.MODE_PRIVATE);
-        PreferenceManager.getDefaultSharedPreferences(this);
-        dollarRate = sharePreferences.getFloat("dollar_rate",0.0f);
-        euroRate = sharePreferences.getFloat("euro_rate",0.0f);
-        wonRate = sharePreferences.getFloat("won_rate",0.0f);
         SharedPreferences sp = getSharedPreferences("myrate",Activity.MODE_PRIVATE);
         SharedPreferences.Editor editor = sp.edit();
         editor.putFloat("dollar_rate",dollarRate);
         editor.putFloat("euro_rate",euroRate);
         editor.putFloat("won_rate",wonRate);
         editor.apply();
+        Log.i(TAG, "onActivityResult: 数据已保存到sharedPreferences");
+
     }
 }
