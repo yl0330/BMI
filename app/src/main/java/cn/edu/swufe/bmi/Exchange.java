@@ -103,6 +103,14 @@ public class Exchange extends AppCompatActivity implements Runnable {
             }
         };
     }
+    public void handleMessage(Message msg) {
+        if(msg.what==5){
+            String str = (String) msg.obj;
+            Log.i(TAG, "handleMessage: getMessage msg = " + str);
+            show.setText(str);
+        }
+        handler.handleMessage(msg);
+    }
 
     public void onClick(View btn) {
         Log.i(TAG, "onClick: ");
