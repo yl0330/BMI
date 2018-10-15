@@ -11,4 +11,5 @@
     <string name="hello">HELLO</string>
     <string name="save">SAVE</string>
     <string name="config">CONFIG</string>
+    <string name="run">run</string>
 </resources>

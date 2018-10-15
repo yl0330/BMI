@@ -145,6 +145,12 @@ public class Exchange extends AppCompatActivity implements Runnable {
         //startActivity(config);
         startActivityForResult(config,1);
     }
+
+    public void Test(View btn) {
+        Intent config = new Intent(this, RateListActivity0.class);
+        startActivity(config);
+    }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(requestCode==1 && resultCode==2){

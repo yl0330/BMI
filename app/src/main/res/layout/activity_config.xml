@@ -16,6 +16,16 @@
         android:onClick="save"
         android:text="@string/save" />
 
+    <Button
+        android:id="@+id/run"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="132dp"
+        android:onClick="openTwo"
+        android:text="@string/run" />
+
     <EditText
         android:id="@+id/euro_rate"
         android:layout_width="match_parent"

@@ -66,4 +66,8 @@ public class ConfigActivity extends AppCompatActivity {
         Log.i(TAG, "onActivityResult: 数据已保存到sharedPreferences");
 
     }
+    public void openTwo(View btn) {
+        Intent config = new Intent(this, MyList2Activity.class);
+        startActivity(config);
+    }
 }
